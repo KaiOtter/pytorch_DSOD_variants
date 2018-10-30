@@ -11,7 +11,7 @@ Dose it really contribute that using compliated Inception blocks between feature
 
 Thus, I did some experiments to explore the above questions.<br>
 
-I use [DSOD_smallest](https://github.com/szq0214/DSOD) as a benckmark. And train with Adam and 16 batch size. The lr uses 2 options 1e-3 and 1e-4. Mostly, I use 1e-3 for fine-tune about 40-50 epoches and than, change to 1e-4 for unforzen model. 
+I use [DSOD_smallest](https://github.com/szq0214/DSOD) as a benckmark and modify its input into 320 and a new list of size of feature maps [40, 20, 10, 5, 3, 1]. And train with Adam and 16 batch size. The lr uses 2 options 1e-3 and 1e-4. Mostly, I use 1e-3 for fine-tune about 40-50 epoches and than, change to 1e-4 for unforzen model. 
 
 Trained on VOC 07+12. Test on VOC 07.<br>
  &emsp;&emsp;&emsp;&emsp; Model &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; mAP<br>
