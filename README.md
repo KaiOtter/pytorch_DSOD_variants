@@ -22,7 +22,7 @@ DSOD64/16 + FPN_Bilinear(with BN ReLu)   &emsp;&emsp;  73.8<br>
 DSOD64/16 + FPN_Nearest(with BN ReLu)   &emsp;&emsp;  73.9<br>
 DSOD64/16 + DSSD  &emsp;&emsp;&emsp;&emsp;   74.5<br>
 DSOD64/16 + DSSD_s(remove 3x3 conv and BN)  &emsp;&emsp; 74.3<br>
-DSOD64/16 + DSSD_s_SE ([SE block])(https://arxiv.org/abs/1709.01507)  &emsp;&emsp; 75.2<br>
+DSOD64/16 + DSSD_s_SE [*SE block](https://arxiv.org/abs/1709.01507)  &emsp;&emsp; 75.2<br>
 
 Then, I tried different predict layers to instead origin 3x3 Conv for cls and loc predict layer.<br>
 1x1 will significantly down performance. Double 3x3 and other various Inception like blocks for enriching receptive fields contribute nothing.
